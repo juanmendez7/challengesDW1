@@ -1,0 +1,41 @@
+Juan Esteban Mendez Tobar - 2210385
+
+1. Buscar las diferencias entre funciones flecha y funciones regulares
+
+REGULAR FUNCTION:
+- el valor de "this" es dinamico, lo que quiere decir que el valor "this" depende de como la funcion es invocada. Tiene un alcance global.
+- la funcion recuglar puede facilmente construir objetos
+- tiene "Arguments" la cual es un objeto especial que contiene una lista de argumentos con los que se ha invocado la funcion
+
+
+ARROW FUNCTION:
+-El valor "this" en una arrow function sera el mismo valor que tenia dentro del contexto en que fue creada la arrow function. Se determina mediante el "lexical. 
+-No pueden ser utilizadas como constructores ni instanciadas, y si lo intentas hacer, te va a saltar error
+-No existe la variable "arguments", no esta definida dentro de las arrow function
+
+
+
+
+2.
+A) Regular Funcion
+function regularFuncion(numero){
+    if (numero % 2 == 0) {
+        console.log(numero + " par");
+    }else{
+        console.log(numero + " impar")
+    }
+}
+
+
+regularFuncion(1);
+
+B) ArrowFunction:
+const ArregloFlecha = (numero1) =>{
+    if(numero1 % 2 == 0){
+       	console.log(numero1 + " par")
+    }else{
+       console.log(numero1 + " impar")
+    }
+}
+
+ArregloFlecha(7);
